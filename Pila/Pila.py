@@ -15,16 +15,16 @@ class Pila:
     def apilar(self,elemento):
         if not self.llena():
             self.__arreglo[self.__tope]=elemento
-            self.__tope+=1
+            self.__tope += 1
             
  
 
             
     def desapilar(self):
         if not self.vacia():
-            self.__tope-=1
-            elemento=self.__arreglo[self.__tope]
-            self.__arreglo[self.__tope]=None
+            self.__tope -= 1
+            elemento = self.__arreglo[self.__tope]
+            self.__arreglo[self.__tope] = None
             
         return elemento
     
@@ -33,7 +33,7 @@ class Pila:
     
     
     def vacia(self):
-        return self.__tope==0
+        return self.__tope == 0
     
     def llena(self):
         return self.__cant==self.__tope
